@@ -1,0 +1,20 @@
+name: "ESLint analysis"
+
+# Run workflow each time code is pushed to your repository and on a schedule.
+# The scheduled workflow runs every at 00:00 on Sunday UTC time.
+on:
+  push:
+  schedule:
+  - cron: '0 0 * * 0'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: 42Crunch REST API Static Security Testing
+      uses: 42Crunch/api-security-audit-action@sarif
+      with:
+        api-token: ${{ secrets.API_TOKEN }}
+        min-score: 80
