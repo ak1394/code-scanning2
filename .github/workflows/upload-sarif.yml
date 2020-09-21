@@ -17,6 +17,6 @@ jobs:
       uses: 42Crunch/api-security-audit-action@sarif
       with:
         api-token: ${{ secrets.API_TOKEN }}
-        min-score: 80
+        min-score: 10
         upload-to-code-scanning: true
         ignore-failures: true
