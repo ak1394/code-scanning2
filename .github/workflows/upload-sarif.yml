@@ -19,3 +19,4 @@ jobs:
         api-token: ${{ secrets.API_TOKEN }}
         min-score: 80
         upload-to-code-scanning: true
+        ignore-failures: true
