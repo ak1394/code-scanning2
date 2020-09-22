@@ -17,5 +17,5 @@ jobs:
       uses: 42Crunch/api-security-audit-action@v1
       with:
         api-token: ${{ secrets.API_TOKEN }}
-        upload-to-code-scanning: true
-        ignore-failures: true
+#        upload-to-code-scanning: true
+#        ignore-failures: true
