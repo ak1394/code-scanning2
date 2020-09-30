@@ -1,8 +1,9 @@
 audit:
+  mapping:
+    xkcd.yaml: e7cd62ce-1ee9-4320-af33-8bd9519c6f48
   fail_on:
 #    score:
 #      data: 60
     issue_id:
       - v3-global-http-clear
       - v3-response-schema-undefined
-
