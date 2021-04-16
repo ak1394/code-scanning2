@@ -40,4 +40,4 @@ jobs:
           # Github token for uploading the results
           github-token: ${{ github.token }}
           log-level: DEBUG
-          platform-url: https://platform.42crunch.com
+          platform-url: https://platform.dev.42crunch.com
