@@ -13,8 +13,7 @@ audit:
           - '**/*.json'
           - '**/*.yaml'
           - '**/*.yml'
-          - '!v2.0/**'
-          - '!v3.0/**'
+          - '!foo/**'
       fail_on:
         score:
           data: 60
