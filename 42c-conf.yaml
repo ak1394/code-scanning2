@@ -7,7 +7,7 @@ audit:
         issue_id:
           - v3-global-http-clear
           - v3-response-schema-undefined
-    dev:
+    dev-foo:
       discovery:
         search:
           - '**/*.json'
