@@ -7,3 +7,17 @@ audit:
         issue_id:
           - v3-global-http-clear
           - v3-response-schema-undefined
+    dev:
+      discovery:
+        search:
+          - '**/*.json'
+          - '**/*.yaml'
+          - '**/*.yml'
+          - '!v2.0/**'
+          - '!v3.0/**'
+      fail_on:
+        score:
+          data: 60
+        issue_id:
+          - v3-global-http-clear
+          - v3-response-schema-undefined
