@@ -27,7 +27,8 @@ jobs:
     steps:
       - uses: wei/curl@v1.1.1
         with:
-          args: '-v -H "X-API-KEY: ${{ secrets.API_TOKEN_DEV }}" https://platform.42crunch.com/api/v1/collections'
+          args: |
+            -v -H \"X-API-KEY: ${{ secrets.API_TOKEN_DEV }}\" https://platform.42crunch.com/api/v1/collections
 
       - uses: actions/checkout@v2
 
