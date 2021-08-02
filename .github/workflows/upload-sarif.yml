@@ -28,7 +28,7 @@ jobs:
       - uses: wei/curl@v1.1.1
         with:
           args: |
-            -v -H \"X-API-KEY: ${{ secrets.API_TOKEN_DEV }}\" https://platform.dev.42crunch.com/api/v1/collections
+            -v -H \"X-API-KEY: ${{ secrets.API_TOKEN }}\" https://platform.42crunch.com/api/v1/collections
 
       - uses: actions/checkout@v2
 
@@ -37,7 +37,7 @@ jobs:
         with:
           # Please create free account at https://platform.42crunch.com/register
           # Follow these steps to configure API_TOKEN https://docs.42crunch.com/latest/content/tasks/integrate_github_actions.htm
-          api-token: ${{ secrets.API_TOKEN_DEV }}
+          api-token: ${{ secrets.API_TOKEN }}
           # Fail if any OpenAPI file scores lower than 75
           min-score: 75
           # Upload results to Github code scanning
@@ -45,4 +45,4 @@ jobs:
           # Github token for uploading the results
           github-token: ${{ github.token }}
           log-level: DEBUG
-          platform-url: https://platform.dev.42crunch.com
+#          platform-url: https://platform.dev.42crunch.com
