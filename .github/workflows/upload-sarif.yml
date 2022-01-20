@@ -19,7 +19,7 @@
 name: "42Crunch REST API Static Security Testing"
 
 # Run workflow each time code is pushed to your repository
-on: [push]
+on: [push, pull_request]
 
 jobs:
   rest-api-static-security-testing:
