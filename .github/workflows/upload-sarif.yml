@@ -27,14 +27,14 @@ permissions:
 jobs:
   rest-api-static-security-testing:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: read # for 42Crunch/api-security-audit-action to upload results to Github Code Scanning
     steps:
       - uses: actions/checkout@v2
 
       - name: 42Crunch REST API Static Security Testing
         uses: 42Crunch/api-security-audit-action@v3
-        permissions:
-          contents: read # for actions/checkout to fetch code
-          security-events: read # for 42Crunch/api-security-audit-action to upload results to Github Code Scanning
         with:
           # Please create free account at https://platform.42crunch.com/register
           # Follow these steps to configure API_TOKEN https://docs.42crunch.com/latest/content/tasks/integrate_github_actions.htm
