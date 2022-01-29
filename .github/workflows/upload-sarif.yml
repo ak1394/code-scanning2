@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read # for actions/checkout to fetch code
-      security-events: read # for 42Crunch/api-security-audit-action to upload results to Github Code Scanning
+      security-events: write # for 42Crunch/api-security-audit-action to upload results to Github Code Scanning
     steps:
       - uses: actions/checkout@v2
 
