@@ -47,5 +47,5 @@ jobs:
           github-token: ${{ github.token }}
           log-level: DEBUG
           platform-url: https://platform.42crunch.com
-          root-directory: foo
+          # root-directory: foo
           default-collection-name: baz
