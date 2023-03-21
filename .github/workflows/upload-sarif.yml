@@ -50,3 +50,6 @@ jobs:
           # root-directory: foo
           default-collection-name: baz
           json-report: audit-report.json
+      
+      - name: Display file contents
+        run: cat audit-report.json
