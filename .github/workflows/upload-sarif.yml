@@ -51,7 +51,7 @@ jobs:
           default-collection-name: baz
           json-report: audit-report.json
           ignore-failures: true
-          audit-timeout: 1
+          audit-timeout: 700
       
       - name: Display file contents
         run: cat audit-report.json
