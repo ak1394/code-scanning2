@@ -1,9 +1,23 @@
 audit:
-  branches:
-    master:
-      fail_on:
-        score:
-          data: 10
-        issue_id:
-          - v3-global-http-clear
-          - v3-response-schema-undefined
+  default:
+    collections:
+      one:
+        dir: root1/oas
+        collection_name: Root1 OAS
+        ignore_failures: true
+        api_tags:                                    
+          - 'SecurityQualityGatesTags:firstTag'      
+          - 'SecurityQualityGatesTags:secondTag'
+      two:
+        ignore_failures: true
+        dir: oas
+        teams:
+          TeamTwo:
+            permissions:
+              - read
+              - write
+          TeamOne:
+            permissions:
+              - read
+              - write
+              - delete
