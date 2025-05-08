@@ -2,7 +2,7 @@ audit:
   default:
     collections:
       one:
-        dir: root1/oas
+        dir: root/oas
         collection_name: Root1 OAS
         ignore_failures: true
         api_tags:                                    
